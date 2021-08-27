@@ -1,0 +1,26 @@
+* {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    float: right;
+}
+
+h3 {
+    background-color: rgb(30, 192, 192);
+}
+
+table,
+tr,
+td,
+th {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 82%;
+}
