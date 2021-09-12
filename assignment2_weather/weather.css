@@ -1,0 +1,286 @@
+body{
+    color:  #212f3d ;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(168, 206, 206);
+}
+
+.navright{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.navright>i{
+    margin: 40px 0;
+}
+
+.navright>i:hover{
+    cursor: pointer;
+}
+
+.heading{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.head-date{
+    font-size: 15px;
+    color: #637274;
+}
+
+.form-inline{
+    border-radius: 30px;
+    background-color:   #f2f4f4  ;
+    width: 33%;
+    border: none;
+    margin: 5px 10px;
+    height: 38px  ;
+    padding: 5px 20px;
+}
+.search-input{
+    border: none;
+    background-color:   #f2f4f4  ;
+}
+
+.bg{
+    position: relative;
+}
+
+.cityscape{
+    opacity: 0.8;
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+.loc{
+    position: absolute;
+    left: 45px;
+    top: 36px;
+    font-size: 20px;
+}
+
+.loc-country{
+    color: solid black;
+}
+
+.today-temp{
+    color: solid black;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+.sub-head, .sub-head-left, .sub-head-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.sub-head-left > div{
+    margin: 2px;
+    color: #6b6f6f;
+}
+.sub-head-right > div{
+    margin: 2px;
+    border-radius: 50%;
+    border: 2px solid #aab7b8;
+    padding: 3px 6px;
+}
+
+.sub-head{
+    justify-content: space-between;
+    margin-top : 20px;
+}
+
+.day-box{
+    font-size: 13px;
+    color: #273746 ;
+    border: 2px solid  black ;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 110px;
+}
+
+.day{
+    font-size: 18px;
+}
+
+.day-weather{
+    font-size: 15px;
+    color: grey;
+}
+
+.day-box-right{
+    margin: 5px;
+}
+
+.ss{
+    display: flex;
+    flex-direction: row;
+}
+
+.ss>i{
+    font-size: 36px;
+    color:  #f1c40f ;
+    margin: 10px 2px 0 0;
+}
+
+.ss-time >p{
+    margin: 0;
+    border: 0;
+    font-size: 15px;
+}
+
+.temp-graph{
+    width: 80%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.highlights-box{
+    border-radius: 20px;
+    background-color:    #f2f4f4    ;
+    margin: 5px 5px 0 5px;
+    padding: 15px;
+}
+
+.air-quality{
+    background-color:  #f1c40f ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 75%;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.calen{
+    background-color: #f2f4f4;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.rightbox{
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fcfced;
+    /* background-image: url(/assignment2_weather/source/world.jpg); */
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.weekdays li {
+    display: inline-block;
+    color:  #e74c3c ;
+    text-align: center;
+    width: 12%;
+}
+  
+.days {
+    padding: 10px 0;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+}
+  
+.days li .active {
+    padding: 5px;
+    background: #f1c40f;
+    border-radius: 50%;
+    padding: 3px 7px;
+  }
+
+.sub{
+    display: flex;
+    flex-direction: row;
+}
+
+.fa-paper-plane{
+    margin: 5px;
+    font-size: 20px;
+    color:  #f1c40f ;
+}
+
+.share{
+    display: flex;
+    flex-direction: row;
+    font-size: smaller;
+}
+
+.phone-logo{
+    width: 50%;
+    margin-right: 10px;
+}
+
+.play-logo{
+    width: 50%;
+}
+
+.addcity{
+    border-radius: 20px;
+    width: 100%;
+}
+
+.btn-danger{
+    border-radius: 10px;
+    margin: 5px;
+
+}
+
+.notif{
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.btn-danger{
+    float: right;
+}
+
+
+.display{
+    text-align: center;
+    background-image: url(/assignment2_weather/source/view-landmark-asian-sky-reflection.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 745px;
+}
+.name{
+    font-size: 150px;
+    color: darkred;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.desc,.temp{
+    font-size: 50px ;
+    font-family: cursive;
+    color:black;
+}
+.country{
+    font-size: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgb(0, 0, 0);
+}

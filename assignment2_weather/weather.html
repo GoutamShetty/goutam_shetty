@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="weather.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0194aef0c2.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+</head>
+<body class="mr-3 p-3">
+    <div class="container-fluid" >
+        <div class="row justify-content-around">
+            <div class="col-1 navright">
+                <i class="fas fa-cloud-sun text-secondary"></i>
+                <i class="fas fa-home text-warning"></i>
+                <i class="fas fa-th-list text-secondary"></i>
+                <i class="fas fa-cog text-secondary"></i>
+                <i class="fas fa-sign-out-alt text-secondary"></i>
+            </div>
+            <div class="col-7">
+                <div class="heading">
+                    <div>
+                        <div>
+                            <h2> <b>Weather Forecast</b> </h2>
+                        </div>
+                        <div class="head-date">Sunday 31, September 2021</div>
+                    </div>
+                    <form class="form-inline" action="city.html" method="GET">
+                        <input
+                          id="searchedcity"
+                          class="search-input"
+                          type="search"
+                          placeholder="Search"
+                          name="search"
+                        />
+                    </form>
+            
+                        
+            
+
+                </div>
+                <div class="bg">
+                    <img class="cityscape" src="./source/bg.jfif" style= "height: 250px;">
+                    <div class="loc">
+                        <div class="loc-city"><b>Kedarnath</b> </div>
+                        <div class="loc-country">India</div>
+                        <div class="today-temp">20 &#176;</div>
+                    </div>
+                    <div class="sub-head">
+                        <div class="sub-head-left">
+                            <div>Today</div>
+                            <div><b class="text-dark">Week</b></div>
+                        </div>
+                        <div class="sub-head-right">
+                            <div class="bg-danger text-light">&#8451;</div>
+                            <div>&#8457;</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md day-box">
+                            <div class="day-box-left">
+                                <h2 class="day">Sunday</h2>
+                                <h3 class="day-weather">Rainy</h3>
+                                <p class="wind">12 km/h<br>50%</p>
+                            </div>
+                            <div class="day-box-right">
+                                <p><i class="fas fa-cloud-showers-heavy text-primary"></i></p>
+                                <p>22 &#176;</p>
+                            </div>
+                        </div>
+                        <div class="col-md day-box">
+                            <div class="day-box-left">
+                                <h2 class="day">Monday</h2>
+                                <h3 class="day-weather">cloudy</h3>
+                                <p class="wind">12.2 km/h<br>
+                                50%</p>
+                            </div>
+                            <div class="day-box-right">
+                                <p><i class="fas fa-cloud text-secondary"></i></p>
+                                <p>23 &#176;</p>
+                            </div>
+                        </div>
+                        <div class="col-md day-box">
+                            <div class="day-box-left">
+                                <h2 class="day">Tuesday</h2>
+                                <h3 class="day-weather">Sunny</h3>
+                                <p class="wind">12.3 km/h<br>
+                                60%</p>
+                            </div>
+                            <div class="day-box-right">
+                                <p><i class="fas fa-cloud-sun-rain text-warning"></i></p>
+                                <p>23 &#176;</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md day-box">
+                            <div class="day-box-left">
+                                <h2 class="day">Wednesday</h2>
+                                <h3 class="day-weather">cold</h3>
+                                <p class="wind">12.5 km/h<br>
+                                60%</p>
+                            </div>
+                            <div class="day-box-right">
+                                <p><i class="fas fa-wind text-primary"></i></p>
+                                <p>32 &#176;</p>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="row">
+                        <div class="col-md-3 day-box">
+                            <div class="day-box-left">
+                                <h2 class="day">Thursday</h2>
+                                <h3 class="day-weather">Sunny</h3>
+                                <p class="wind">10.6 km/h<br>
+                                60%</p>
+                            </div>
+                            <div class="day-box-right">
+                                <p><i class="fas fa-bolt text-warning"></i></p>
+                                <p>22 &#176;</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 day-box">
+                            <div class="day-box-left">
+                                <h2 class="day">Friday</h2>
+                                <h3 class="day-weather">Cold</h3>
+                                <p class="wind">16.3 km/h<br>
+                                40%</p>
+                            </div>
+                            <div class="day-box-right">
+                                <p><i class="fas fa-wind text-primary"></i></p>
+                                <p>21 &#176;</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 day-box">
+                            <div class="day-box-left">
+                                <h2 class="day">Saturday</h2>
+                                <h3 class="day-weather">Partly cloudy</h3>
+                                <p class="wind">10.3 km/h<br>
+                                60%</p>
+                            </div>
+                            <div class="day-box-right">
+                                <p><i class="fas fa-cloud-sun text-warning"></i></p>
+                                <p>32 &#176;</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="highlights">
+                    <h3 class="m-3"><b>Today's Highlights</b></h3>
+                    <div class="row">
+                        <div class="col-md highlights-box">
+                            <h5><b>Sunrise &Sunset</b></h5>
+                            <div class="ss-box row">
+                                <div class="ss col">
+                                    <i class="fas fa-arrow-circle-up"></i>
+                                    <div class="ss-time">
+                                        <p><b>5:39 AM</b></p>
+                                        <p class="ss-time-sub">+0m 20s</p>
+                                    </div>
+                                </div>
+                                <div class="ss col">
+                                    <i class="fas fa-arrow-circle-down"></i>
+                                    <div class="ss-time">
+                                        <p><b>6:13 PM</b></p>
+                                        <p class="ss-time-sub">+1m 06s</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md highlights-box">
+                            <h5><b>Temp. Graph</b></h5>
+                            <img class="temp-graph"
+                                src="./source/2385_temp-graph-012721.jpg" alt="">
+                        </div>
+                        <div class="col-md highlights-box">
+                            <h5><b>Air Quality</b></h5>
+                            <div class="air-quality ">
+                                <div class="air-left ">
+                                    <div class="text-center">US AQI</div>
+                                    <div class="text-center"><b>93&#176;</b></div>
+                                </div>
+                                <div class="air-right "><b>Moderate</b></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-3 ">
+                <div class="notif row justify-content-between">
+                    <div class="notif-left col-4">
+                        <i class="far fa-comment-alt text-danger" style="padding: 10px;"></i>
+                        <i class="far fa-bell text-warning"></i>
+                    </div>
+                    <div class="notif-right col-4">
+                        <i class="far fa-user-circle text-secondary"></i>
+                        <span><b class="text-secondary">Ravi</b></span>
+                        <i class="fas fa-chevron-down text-secondary"></i>
+                    </div>
+                </div>
+                <div class="calen">
+                    <div class="rightbox">
+                        <div class="month">
+                            <b>September</b>
+                        </div>
+                        <ul class="weekdays">
+                            <li>Su</li>
+                            <li>Mo</li>
+                            <li>Tu</li>
+                            <li>We</li>
+                            <li>Th</li>
+                            <li>Fr</li>
+                            <li>Sa</li>
+                        </ul>
+
+                        <ul class="days">
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>11</li>
+                            <li>10</li>
+                            <li>12</li>
+                            <li>13</li>
+                            <li>14</li>
+                            <li>15</li>
+                            <li>16</li>
+                            <li>17</li>
+                            <li>18</li>
+                            <li>19</li>
+                            <li>20</li>
+                            <li>21</li>
+                            <li>22</li>
+                            <li>23</li>
+                            <li>24</li>
+                            <li>25</li>
+                            <li>26</li>
+                            <li>27</li>
+                            <li>28</li>
+                            <li>29</li>
+                            <li>30</li>
+                            <li><span class="active">31</span></li>
+                        </ul>
+
+                    </div>
+                    <div class="rightbox sub">
+                        <i class="fas fa-paper-plane"></i>
+                        <div class="text-danger "><b>Click here to Join us</b></div>
+                    </div>
+                    <div class="rightbox share">
+                        <img class="phone-logo" src="./source/smartphone.png" alt="" style="height: 150px;">
+                        <div>
+                            <h6><b>Get our Weather App on your devices</b></h6>
+                            <div class="text-muted ">Click here to download</div>
+                            <img class="play-logo"
+                                src="./source/get-it-on-google-play-badge.png"
+                                alt="" style="height: 60px; width: 100px;">
+                        </div>
+                    </div>
+                    <div class="rightbox" style="background-image: url(/assignment2_weather/source/world.jpg); background-size: 100% 100%;">
+                        <button class="btn-danger">Add City</button>
+                        <!-- <img class="addcity" src="./source/world.jpg" alt=""> -->
+                        
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+        crossorigin="anonymous"></script>>
+</body>
+
+</html>
