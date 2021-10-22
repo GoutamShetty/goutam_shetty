@@ -1,0 +1,359 @@
+html,body{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+#header-img{
+    position: relative;
+    width: 100vw;
+    height: 600px;
+    background-image: linear-gradient(to right,rgba(0,0,0,0.4),rgba(0,0,0,0.6)),url('https://b.zmtcdn.com/data/pictures/1/19076131/b2daf97e40242fb6dce824e5fcd70d3e.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}
+
+header{
+    width: 100vw;
+    height: 60px;
+}
+
+.nav-menu{
+    width: 60vw;
+    height: 60px;
+    /* position: fixed; */
+}
+
+.zomato{
+    display: block;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    font-size: 68px;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.header-flex{
+    margin-top: 100px;
+}
+
+.nav-link{
+    border-bottom: 0px solid white;
+    color: white;
+    transition: border-bottom 0.3s;
+    cursor: pointer;
+    position: relative;
+    right: -40px;
+}
+
+#getapp{
+    float: left;
+    margin-top: 20px;
+    margin-left: -300px;
+}
+
+#getappafter{
+    float: left;
+    margin-top: 20px;
+    margin-left: -200px;
+}
+
+#loginarea{
+    display: flex;
+    float:right;
+    margin-top: 30px;
+    margin-right: -250px;
+}
+
+.nav-link:hover{
+    border-bottom: 1px solid white;
+    color: rgb(255, 0, 0);
+}
+
+.search-box{
+    width: 30vw;
+    height: 60px;
+    background-color: white;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-left: 20px;
+    outline: none;
+    /* font-weight: bold; */
+    font-size: 18px;
+}
+
+.search-btn{
+    width: 100px;
+    position: relative;
+    bottom: -7px;
+    left: -4px;
+    height: 60px;
+    background-color: darkred;
+    color: white;
+    border: none;
+    border-top-right-radius :20px; 
+    border-bottom-right-radius:  20px ;
+    font-size: 20px;
+    /* font-weight: bold; */
+}
+
+.search-btn:hover{
+    color: black;
+    background-color:rgb(180, 4, 4);
+}
+
+.bi-search{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#second-section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #ccc;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+    margin-bottom: 10px ;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 5px black;
+    cursor: pointer;
+}
+
+.card-bottom{
+    position: absolute;
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    margin-top: 150px;
+
+}
+
+#popular-locations{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.popular-heading{
+    font-size: 40px;
+    color: black;  
+}
+
+.locations-div{
+    width: 100%;
+    height: 60px;
+    background-color:white;
+    border: 2px solid#ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.locations-div:hover{
+    box-shadow: 5px 5px 5px black;
+}
+
+.font-weight-bold{
+    font-weight: bold;
+}
+
+.fa{
+    font-size: larger;
+    margin-right: 20px;
+}
+
+#popular-locations .container .row a{
+    background-color: indianred;
+    margin-top: 10px;
+}
+
+
+@media only screen and (max-width :768px){
+    .locations-div{
+        margin-bottom: 10px;
+    }
+}
+  
+footer{
+    background-color:lavenderblush;
+}
+
+
+
+.footername{
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 45px;
+    margin-bottom: 50px;
+    padding-top: 40px;
+}
+
+#contactheading{ 
+    /* border: 1px solid black; */
+    margin-bottom: 20px;
+ } 
+
+#contactheading h4{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#contactheading input{
+    margin-bottom: 20px;
+    width:100%;
+    border: none;
+    border-bottom: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#contactheading button{
+    color:black;
+    background-color: red;
+    font-weight: bolder;
+}
+
+#contactheading i{
+    justify-content: center;
+    display: inline;
+    margin-left: 50px;
+    font-size: 40px;
+    color: black;
+}
+
+#contacttext{
+    height: 90px;
+    margin-bottom: 20px;
+    width:100%;
+    border: none;
+    border-bottom: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#contactheading img{
+    margin-left: 30px;
+}
+
+#row{
+    border-bottom: 2px solid black;
+}
+
+a{
+
+    text-decoration: none;
+    color:black;
+} 
+
+.action .profile i{
+    font-size: 60px;
+    color: indianred;
+    /* float: right;
+    margin-top: 20px; */
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.action{
+    position:absolute;
+    top: 20px;
+    /* background-color: yellowgreen; */
+    right: 30px;
+    margin-right: 30px;
+}
+
+.action .profile{
+    /* background-color:; */
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.action .menu{
+    position: absolute;
+    top:80px;
+    right: -10px;
+    /* padding: 10px 20px; */
+    background: white;
+    width: 120px;
+    box-sizing: 0 5px 25px rgba(129, 117, 117, 0.1);
+    border-radius: 15px;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.action .menu ul li{
+    list-style: none;
+    padding: 10px 0;
+    border-top: 1px solid rgba(0, 0,0,0.05);
+    direction: flex;
+    align-items:center;
+    margin-left: -10px;
+}
+
+ .action .menu::before{
+    content: '';
+    position: absolute;
+    top:-5px;
+    right: 28px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    transform: rotate(45deg);
+ }
+
+
+.action .menu.active{
+    visibility: visible;
+}
+
+.menu ul li i{
+    display: flex;
+    float: left;
+}
+
+.profilename{
+    /* background-color: antiquewhite; */
+    float: right;
+    margin-right: 130px;
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: bolder;
+    color: aliceblue;
+}
+
+.cart{
+    background-color:navajowhite;
+}
+
+.carttable{
+    border-bottom: rgb(107, 13, 13);
+}
