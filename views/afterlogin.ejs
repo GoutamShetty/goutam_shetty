@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+    <title>Zomato Clone</title>
+</head>
+<body>
+    <%- include ("../views/partials/header.ejs") %> 
+   <section id="second-section">
+       <div class="container">
+           <div class="row">
+               <div class="col-md-3">
+                <a href="/xyz/chicken">
+                   <div class="card">
+                       <img src="https://bigpitcher.co.in/shop-big-pitcher/wp-content/uploads/2020/08/WhatsApp-Image-2020-08-07-at-11.31.48-AM-1.jpeg" height="160px" nwidth="100%"/>
+                       <div class="card-bottom">
+                           <p class="h4 m-0 mt-2 text-center text-black">Chicken</p>
+                        </div>
+                    </div>
+                </div></a>
+                <div class="col-md-3">
+                    <a href="/xyz/ragi mudde">
+                    <div class="card">
+                        <img src="https://3.bp.blogspot.com/-wj89sYT_y74/We9BzE-nmvI/AAAAAAAAB34/0m2gYssdPSE1lflGqcwz5cTgi6LtuJFBwCLcBGAs/s1600/DSCN6055.JPG" height="160px" nwidth="100%"/>
+                        <div class="card-bottom">
+                            <p class="h4 m-0 mt-2 text-center text-black">Ragi Mudde</p>
+                    </div>
+                </div>
+            </div></a>
+            <div class="col-md-3">
+                <a href="/xyz/tea">
+                <div class="card">
+                    <img src="https://qph.fs.quoracdn.net/main-qimg-cd2b031d0a60959d40a1e10ada522dee-c" height="160px" width="110%"/>
+                    <div class="card-bottom">
+                        <p class="h4 m-0 mt-2 text-center text-black">Cutting Chai</p>
+                    </div>
+                </div>
+            </div></a>
+            <div class="col-md-3">
+                <a href="/xyz/dosa">
+                <div class="card">
+                    <img src="https://5.imimg.com/data5/OR/OI/MY-10374842/south-indian-food-dosa-500x500.png" height="160px" nwidth="100%"/>
+                    <div class="card-bottom">
+                        <p class="h4 m-0 mt-2 text-center text-black">Dosa</p>
+                    </div>
+                </div>
+            </div></a>
+        </div>
+    </div>
+   </section>
+   <section id="popular-locations">
+       <div class="container">
+           <div class="d-flex justify-content-center">
+               <p class="popular-headig h6">Popular locations in and around <span class="font-weight-bold">Bengaluru</span></p>
+            </div>
+           <div class="row mt-4">
+            <div class="col-md-4" id="wh" onclick="loc(this.id)"><a href="White Field">
+                <div class="d-flex align-items-center locations-div">
+                 <p class="h5 text-black"style="margin-left: 10px;">Whitefield Area</p>
+                    <i class="fa fa-arrow-right ml-auto mr-4"></i>
+                 </div></a>
+                 </div>
+             <div class="col-md-4" id="ja" onclick="loc(this.id)"><a href="Jayanagar">
+                 <div class="d-flex align-items-center locations-div">
+                     <p class=" h5 text-black" style="margin-left: 10px;">Jayanagar</p>
+                     <i class="fa fa-arrow-right ml-auto mr-4"></i>
+                 </div></a>
+                 </div>
+             <div class="col-md-4" id="ba" onclick="loc(this.id)"><a href="Basavanagudi">
+                 <div class="d-flex align-items-center locations-div">
+                     <p class=" h5 text-black" style="margin-left: 10px;" >Basavanagudi</p>
+                     <i class="fa fa-arrow-right ml-auto mr-4"></i>
+                 </div></a>
+             </div>
+         </div>
+
+         <div class="row mt-4">
+             <div class="col-md-4" id="jp" onclick="loc(this.id)"><a href="JP Nagar">
+                 <div class="d-flex align-items-center locations-div">
+                     <p class=" h5 text-black" style="margin-left: 10px;" >JP Nagar</p>
+                     <i class="fa fa-arrow-right ml-auto mr-4"></i>
+                 </div></a>
+             </div>
+             <div class="col-md-4" id="bn" onclick="loc(this.id)"><a href="Banashankari">
+                  <div class="d-flex align-items-center locations-div">
+                      <p class="h5 text-black" style="margin-left: 10px;" >Banashankari</p>
+                      <i class="fa fa-arrow-right ml-auto mr-4"></i>
+                  </div></a>
+              </div>
+             <div class="col-md-4" id="ut" onclick="loc(this.id)"><a href="Uttarahalli">
+                  <div class="d-flex align-items-center locations-div">
+                      <p class=" h5 text-black" style="margin-left: 10px;">Uttarahalli</p>
+                      <i class="fa fa-arrow-right ml-auto mr-4"></i>
+                  </div></a>
+              </div>
+             </div>
+            </div>
+        </section>
+ 
+    <script src="zomato.js" type="text/javasript"></script>
+    <script>
+        function loc(clickedid){
+           area=document.getElementById(clickedid).innerText
+           localStorage.setItem("area",area);
+       }
+    </script>
+    
+<%- include ("../views/partials/footer.ejs")  %>   
