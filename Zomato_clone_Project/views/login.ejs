@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/login.css">
+    <script src="zomato.js" type="text/javascript"></script>
+    <title>Login/SignUp</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="alert alert-danger">
+                <%=failure%>
+            </div>
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="signup()">SignUp</button>
+            </div>
+            <form id="login" class="input-group" method="POST" action="/login">
+                <input type="text" class="input-field" placeholder="Enter Email" name="email" required>
+                <input type="password" class="input-field" placeholder="Enter Password" name="pass" required>
+                <!-- <input type="checkbox" class="check-box"><span>Remember Password</span>  -->
+                <button type="submit" class="submit-btn" id="loginbtn">Log in</button>
+            </form>
+            <form id="register" class="input-group" method="POST" action="/signup">
+                <input type="text" class="input-field" placeholder="Enter Name" name="username" required>
+                <input type="text" class="input-field" placeholder="Email id" name="emailid" required>
+                <input type="text" class="input-field" placeholder="Enter Password" name="pass" required>
+                <input type="password" class="input-field" placeholder="Confirm Password" name="confirmpass" required>
+                <input type="checkbox" class="check-box" required><span>I agree to the terms & conditions</span> 
+                <button type="submit" class="submit-btn" >Sign Up</button>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function signup(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left ="110px";
+        }
+
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left ="0px";
+        }
+
+
+    </script>
+</body>
+</html>

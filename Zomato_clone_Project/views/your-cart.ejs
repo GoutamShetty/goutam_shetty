@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="/location.css"> -->
+    <link rel="stylesheet" href="/styles.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Cart</title>
+</head>
+<body>
+    <%- include ('../views/partials/header.ejs') %> 
+    <div class="container cart">
+        <% if(cart!=null) { %>
+            <div class="row">
+                <div class="col-md-11 col-sm-12 m-auto table-responsive">
+                  <table class="table text-center">
+                    <thead>
+                      <tr >
+                        <th>Food</th>
+                        <th>&nbsp;</th>
+                        <th>&nbsp;</th>
+                        <th>Quantity</th>
+                        <th>&nbsp;</th>
+                        <th>Total</th>
+                        <th>Subtotal</th>
+                        <th>&nbsp;</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <% products.forEach( product => { %> <% if(product != null) {%>
+                            <tr class="my-auto carttable">
+                                <td>
+                                    <img src="<%=product.foodimage%>" class="img-small image-fluid " height="200px" width="300px" alt="image thumbnail" />
+                                </td>
+                                <td>
+                                    <div class="float-left mb-3">
+                                        <h5 class="text-left"><%=product.name %></h5>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <a href="/add-to-cart/<%=product._id%>"
+                                      ><i class="fa fa-plus-square" aria-hidden="true"></i
+                                    > </a>
+                                  </td>
+                                  <td class="text-center">
+                                    <p class="qty-display pt-1">
+                                    <%= product.qty %>
+                                  </p>
+                                </td>
+                                <td class="text-center" >
+                                    <a href="/reduce/<%=product._id%>"
+                                      ><i class="fa fa-minus-square" aria-hidden="true"></i
+                                    ></a>
+                                  </td>
+                                  <td>Rs <%= product.price %></td>
+            <td>Rs <%= product.totalPrice %></td>
+            <td>
+                <a
+                  href="/removeAll/<%=product._id%>"
+                  class="btn btn-danger btn-sm button-style-danger"
+                  >Remove all</a
+                >
+              </td>
+            </tr>
+            <% } %> <% }) %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <hr>
+  <div class="row mt-4 mr-auto">
+    <div class="col-md-11 col-sm-12 m-auto">
+      <strong>Total: Rs <%= cart.totalCost %> </strong>
+    </div>
+  </div>
+  <div class="row mt-2 mr-auto">
+    <div class="col-md-11 col-sm-12 m-auto">
+      <a href="/checkout" class="btn btn-dark button-style">Checkout</a>
+    </div>
+  </div>
+  <% } else { %>
+  <div class="row text-center">
+    <div class="col-md-9 col-sm-9 m-auto">
+      <h2>No items in the cart</h2>
+    </div>
+  </div>
+
+  <% } %>
+</div>
+<%- include ('../views/partials/footer.ejs') %>
