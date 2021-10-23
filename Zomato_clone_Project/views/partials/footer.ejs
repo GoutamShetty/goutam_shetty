@@ -1,0 +1,48 @@
+
+<footer>
+    <h2 class="footername">Zomato</h2>
+    <div class="container">
+        <div class="row" id="row">
+            <div class="col-md-4" id="contactheading">
+                <h4>About Us</h4>
+                <p>Launched in 2010, Our technology platform connects customers, restaurant partners and delivery partners, serving their multiple needs. Customers use our platform to search and discover restaurants, read and write customer generated reviews and view and upload photos, order food delivery, book a table and make payments while dining-out at restaurants</p>
+            </div>
+            <div class="col-md-4" id="contactheading">
+                <h4>Contact Us</h4>
+                <input type="text" placeholder="Your Name" id="contactname" ><br>
+                <input type="email" placeholder="Your Email address" id="contactemail" ><br>
+                <textarea type="text" placeholder="Your Feedback" id="contacttext" ></textarea><br>
+                <button type="submit" onclick="feedback()">Submit</button>
+           <p></p>
+        </div>
+        <div class="col-md-4" id="contactheading">
+            <h4>Social Links</h4>
+           <a href="https://www.instagram.com/zomato/"><i class="fa fa-instagram"></i></a>
+           <a href="https://www.facebook.com/zomato"><i class="fa fa-facebook"></i></a>
+           <a href="https://twitter.com/zomato"><i class="fa fa-twitter"></i></a><br>
+           <a href="https://play.google.com/store/apps/details?id=com.application.zomato&_branch_match_id=971624175849810914&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT8pL1ssp0U%2FJL8%2FLyU9M0a3STcxLKcrPTAEABp6kzyEAAAA%3D"><img src="./img/google-play-badge/128x128.png" id="playstore"></a>
+           <a href="https://apps.apple.com/in/app/zomato-food-restaurant-finder/id434613896?_branch_match_id=971624175849810914"><img src="./img/app-store-badge/128x128.png" id="applestore"></a>
+       </div>
+    </div>
+    <p id="last">By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2021 © Zomato™ Ltd. All rights reserved.</p>
+</div>
+</footer>
+
+<script>
+    function feedback(){
+            a=document.getElementById("contactname").value
+            b=document.getElementById("contactemail").value
+            c=document.getElementById("contacttext").value
+            if(a=='' || b=='' || c==''){
+                alert("Please enter the details")
+            }
+            else{
+                alert("Your feedback submitted successfully")
+                document.getElementById("contactname").value=''
+                document.getElementById("contactemail").value=''
+                document.getElementById("contacttext").value=''
+            }
+       }
+</script>
+</body>
+</html>

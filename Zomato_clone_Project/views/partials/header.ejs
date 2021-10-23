@@ -1,0 +1,45 @@
+
+
+<div id="header-img">
+    <header>
+        <div class="profilename">
+            <%=profilename%> 
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="nav-menu">
+                <a href="https://play.google.com/store/apps/details?id=com.application.zomato&_branch_match_id=971624175849810914&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT8pL1ssp0U%2FJL8%2FLyU9M0a3STcxLKcrPTAEABp6kzyEAAAA%3D"><p class="text-white nav-link" id="getappafter">Get the app</p></a>
+                <div class="action">
+                    <div class="profile" onclick="toggle()">
+                        <i class="fa fa-user-circle" id="profile"></i>
+                    </div>
+                    <div class="menu" id="menu">
+                        <ul>
+                            <li class="d-flex float-left"><a href="/your-cart"><i class="fa fa-shopping-cart"></i><span>Cart <span class="badge badge-secondary">2</span></span></a></li>
+                           <li><a href="/"><i class="fa fa-sign-out"></i><span>Logout</span></a></li>
+                        </ul>
+                   </div>
+            
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="d-flex justify-content-center header-flex">
+            <p class="zomato">Zomato</p>
+        </div>
+        <div class="d-flex justify-content-center mt-4">
+            <form action="/search" method="GET"><input type="search" placeholder="Search for dishes or restaurants"class="search-box" name="search"/>
+            <button class="search-btn"><i class="bi bi-search"></i></button>
+       </div>
+    </div>
+</div>
+
+<script>
+     function toggle(){
+        const togglemenu=document.querySelector('.menu')
+        togglemenu.classList.toggle('active')
+        }
+</script>
+
+    
